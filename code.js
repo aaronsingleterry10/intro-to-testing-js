@@ -3,6 +3,18 @@ function helloWorld() {
     return "Hello, World!";
 }
 
+// function sayHello(input) {
+//     if (input === undefined || input === true || input === false) {
+//         return 'Hello, World!';
+//     } else {
+//         return 'Hello, ' + input + '!';
+//     }
+// }
+
 function sayHello(input) {
-    return 'Hello, ' + input + '!';
+    if (typeof input === 'string' ) {
+        return 'Hello, ' + input + '!';
+    } else {
+        return 'Hello, World!';
+    }
 }
