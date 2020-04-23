@@ -45,4 +45,13 @@ describe('isFive', function() {
    it('should be a defined function', function () {
        expect(typeof isFive).toBe('function');
    });
+   it('should be defined a boolean', function() {
+       expect(typeof isFive()).toBe('boolean');
+   });
+   it('should return true if argument passed is the number 5 executed', function() {
+       expect(isFive(5)).toBe(true);
+   });
+   it('should return true if argument passed is the string "5" when executed', function() {
+      expect(isFive('5')).toBe(true);
+   });
 });
