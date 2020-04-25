@@ -75,9 +75,13 @@ describe('isEven', function() {
     it('returns false when executed with 3', function() {
         expect(isEven(3)).toBe(false);
     });
-    it('returns false when executed "banana"', function() {
+    it('returns false when executed with "banana"', function() {
         expect(isEven('banana')).toBe(false);
     });
-
-
+    it('returns true when executed with "8"', function () {
+        expect(isEven('8')).toBe(true);
+    });
+    it('returns false when called with Infinity', function() {
+        expect(isEven(Infinity)).toBe(false);
+    });
 });
