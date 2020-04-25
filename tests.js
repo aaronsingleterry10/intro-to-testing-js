@@ -48,10 +48,22 @@ describe('isFive', function() {
    it('should be defined a boolean', function() {
        expect(typeof isFive()).toBe('boolean');
    });
-   it('should return true if argument passed is the number 5 executed', function() {
+   it('should return true if the number 5 is executed', function() {
        expect(isFive(5)).toBe(true);
    });
-   it('should return true if argument passed is the string "5" when executed', function() {
-      expect(isFive('5')).toBe(true);
+   it('should return false if the number 6 is executed', function() {
+       expect(isFive(6)).toBe(false);
    });
+   it('should return false if the string "Hello, World!" is executed', function() {
+       expect(isFive('Hello, World!')).toBe(false);
+   })
+});
+
+describe('isEven', function() {
+    it('should be a defined function', function() {
+        expect(typeof isEven).toBe('function');
+    });
+    it('should be defined a boolean', function() {
+        expect(typeof isEven()).toBe('boolean');
+    });
 });
