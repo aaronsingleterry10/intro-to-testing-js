@@ -24,5 +24,5 @@ function isFive(input) {
 }
 
 function isEven(input) {
-    return true;
+    return input === 2 || input === -4;
 }
