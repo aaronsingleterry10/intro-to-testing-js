@@ -95,5 +95,11 @@ describe('isVowel', function() {
     });
     it('should return true when passed with "a"', function() {
         expect(isVowel('a')).toBe(true);
-    })
+    });
+    it('should return true when passed with "A"', function () {
+        expect(isVowel('A')).toBe(true);
+    });
+    it('should return false when passed with "y"', function() {
+        expect(isVowel('y')).toBe(false);
+    });
 });
