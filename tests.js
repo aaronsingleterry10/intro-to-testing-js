@@ -90,4 +90,10 @@ describe('isVowel', function() {
     it('should be a defined function', function () {
         expect(typeof isVowel).toBe('function');
     });
+    it('should be a boolean value', function() {
+        expect(typeof isVowel()).toBe('boolean')
+    });
+    it('should return true when passed with "a"', function() {
+        expect(isVowel('a')).toBe(true);
+    })
 });
