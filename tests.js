@@ -84,6 +84,10 @@ describe('isEven', function() {
     it('returns false when called with Infinity', function() {
         expect(isEven(Infinity)).toBe(false);
     });
+    it('should return false when passed with boolean inputs', function() {
+        expect(isVowel(true)).toBe(false);
+        expect(isVowel(false)).toBe(false);
+    });
 });
 
 describe('isVowel', function() {
@@ -102,4 +106,12 @@ describe('isVowel', function() {
     it('should return false when passed with "y"', function() {
         expect(isVowel('y')).toBe(false);
     });
+    it('should return false when passed with 4', function() {
+        expect(isVowel(4)).toBe(false);
+    });
+    it('should return false when passed with boolean inputs', function() {
+       expect(isVowel(true)).toBe(false);
+       expect(isVowel(false)).toBe(false);
+    });
+
 });
