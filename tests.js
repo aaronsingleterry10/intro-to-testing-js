@@ -116,4 +116,13 @@ describe('isVowel', function() {
     it('should return false when passed with "banana"', function() {
         expect(isVowel('banana')).toBe(false);
     });
+    it('should return false when passed with an no input', function() {
+        expect(isVowel()).toBe(false);
+    });
+});
+
+describe('add', function() {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe('function');
+    });
 });
