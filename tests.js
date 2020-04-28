@@ -131,4 +131,10 @@ describe('add', function() {
     it('should return -12 when inputs -3 and -9 are paseed', function() {
         expect(add(-3, -9)).toBe(-12);
     });
+    it('should return 11 when inputs "5" and 6 are passed', function() {
+       expect(add('5', 6)).toBe(11);
+    });
+    it('should return 6 when "-4" and "10" are passed', function() {
+       expect(add('-4', '10')).toBe(6);
+    });
 });
