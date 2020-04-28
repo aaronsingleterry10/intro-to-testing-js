@@ -31,6 +31,6 @@ function isVowel(input) {
     return input === 'a' || input === 'A';
 }
 
-function add() {
-
+function add(num1, num2) {
+    return num1 + num2;
 }

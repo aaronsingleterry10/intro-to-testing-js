@@ -125,4 +125,7 @@ describe('add', function() {
     it('should be a defined function', function () {
         expect(typeof add).toBe('function');
     });
+    it('should return 5 when inputs 2 and 3 are passed', function() {
+       expect(add(2, 3)).toBe(5);
+    });
 });
