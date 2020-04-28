@@ -137,4 +137,10 @@ describe('add', function() {
     it('should return 6 when "-4" and "10" are passed', function() {
        expect(add('-4', '10')).toBe(6);
     });
+    it('should return NaN when "banana" and "split" are passed', function() {
+       expect(add('banana', 'split')).toBeNaN();
+    });
+    it('should return NaN when 2 and "apples" are passed', function () {
+        expect(add(2, 'apples')).toBeNaN();
+    });
 });
