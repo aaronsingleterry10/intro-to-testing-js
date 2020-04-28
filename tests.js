@@ -143,4 +143,7 @@ describe('add', function() {
     it('should return NaN when 2 and "apples" are passed', function () {
         expect(add(2, 'apples')).toBeNaN();
     });
+    it('should return NaN when returned with empty input', function () {
+        expect(add()).toBeNaN();
+    });
 });
