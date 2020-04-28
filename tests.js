@@ -128,4 +128,7 @@ describe('add', function() {
     it('should return 5 when inputs 2 and 3 are passed', function() {
        expect(add(2, 3)).toBe(5);
     });
+    it('should return -12 when inputs -3 and -9 are paseed', function() {
+        expect(add(-3, -9)).toBe(-12);
+    });
 });
